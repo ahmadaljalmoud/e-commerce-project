@@ -6,7 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import Products from './products';
-import Cart from './cart'
+// import Cart from './cart'
 function App() {
   const [selectedProducts, setSelectedProducts]=useState();
 
@@ -19,7 +19,7 @@ function App() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <Link to="/about">About</Link>
             </li>
             <li>
               <Link to="/cart">Cart</Link>
@@ -34,7 +34,7 @@ function App() {
             {/* <About /> */}
           </Route>
           <Route path="/cart">
-            {Cart}
+            {/* {Cart} */}
           </Route>
           <Route path="/">
           <Products setSelectedProducts={setSelectedProducts}/>
