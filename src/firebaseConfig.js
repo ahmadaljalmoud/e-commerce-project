@@ -1,7 +1,8 @@
 import * as firebase from 'firebase';
 import 'firebase/database'; 
+import "firebase/auth";
 
-  var firebaseConfig = {
+  const firebaseConfig = {
     apiKey: "AIzaSyCmtdxNZyrB6XHdnSNmgbUjzAfdXQfpwIU",
     authDomain: "e-commerce-4f6d6.firebaseapp.com",
     databaseURL: "https://e-commerce-4f6d6.firebaseio.com",
@@ -14,5 +15,5 @@ import 'firebase/database';
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-
+  export const auth = firebase.auth();
   export default firebase.firestore(); 
